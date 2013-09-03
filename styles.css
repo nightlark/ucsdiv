@@ -1,0 +1,87 @@
+#container {
+    position: absolute;
+    width: 100%;
+    min-width: 1200;
+}
+
+#header {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    height: 66px;
+    width: 100%;
+    min-width: 960px;
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 900;
+}
+
+#header h1 {
+    display: block;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#primary-nav {
+    float: right;
+    display: block;
+    padding: 26px 0 0 0;
+    margin: 0;
+}
+
+#primary-nav li {
+    display: block;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+#bg {
+   position: fixed;
+   top: 0;
+   left: 0;
+   min-width: 100%;
+   min-height: 100%;
+}
+
+.home-background {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.content-wrapper {
+    top: 66px;
+    width: 100%;
+    bottom: 35px;
+    height: auto;
+    position: absolute;
+}
+
+.constrain {
+    z-index: 600;
+    display: block;
+    position: relative;
+    padding: 0 0 0 0;
+    top: 0;
+    margin: 0 auto 0;
+    width: 960px;
+    color: white;
+}
+
+#footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: block;
+    position: fixed;
+    height: 35px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 800;
+}
