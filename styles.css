@@ -1,7 +1,17 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: BonvenoCF-Light;
+    src: url('BonvenoCF-Light.otf');
+}
+
 #container {
     position: absolute;
     width: 100%;
     min-width: 1200;
+    height: 100%;
 }
 
 #header {
@@ -36,6 +46,8 @@
     float: left;
     padding: 0;
     margin: 0;
+    font-size: 14pt;
+    font-family: BonvenoCF-Light;
 }
 
 #bg {
@@ -56,22 +68,31 @@
 }
 
 .content-wrapper {
-    top: 66px;
     width: 100%;
-    bottom: 35px;
-    height: auto;
+    height: 100%;
     position: absolute;
+    text-align: center;
+    font-size: 27pt;
+    font-family: BonvenoCF-Light;
+    display: table;
+    padding-bottom: 35px;
+    padding-top: 66px;
 }
 
 .constrain {
     z-index: 600;
-    display: block;
     position: relative;
     padding: 0 0 0 0;
     top: 0;
     margin: 0 auto 0;
     width: 960px;
     color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#content {
+    height: 100%;
 }
 
 #footer {
