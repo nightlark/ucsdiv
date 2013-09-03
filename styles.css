@@ -29,8 +29,11 @@
 
 #header h1 {
     display: block;
+    position: absolute;
     margin: 0;
     padding: 0;
+    top: -100px;
+    margin-left: -100px;
     float: left;
 }
 
@@ -44,9 +47,9 @@
 #primary-nav li {
     display: block;
     float: left;
-    padding: 0;
+    padding-left: 15px;
     margin: 0;
-    font-size: 14pt;
+    font-size: 14px;
     font-family: BonvenoCF-Light;
 }
 
@@ -70,39 +73,59 @@
 .content-wrapper {
     width: 100%;
     height: 100%;
-    position: absolute;
-    text-align: center;
-    font-size: 27pt;
-    font-family: BonvenoCF-Light;
-    display: table;
-    padding-bottom: 35px;
-    padding-top: 66px;
-}
-
-.constrain {
     z-index: 600;
     position: relative;
-    padding: 0 0 0 0;
-    top: 0;
-    margin: 0 auto 0;
-    width: 960px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 27px;
+    font-family: BonvenoCF-Light;
     color: white;
     display: table-cell;
-    vertical-align: middle;
+}
+
+.constrain-960 {
+    padding: 0 0 0 0;
+    margin: 0 auto 0;
+    min-width: 960px;
+    max-width: 960px;
 }
 
 #content {
+    width: 100%;
     height: 100%;
+    min-width: 960px;
+    display: table;
+    position: absolute;
+    padding-bottom: 35px;
+    padding-top: 66px;
 }
 
 #footer {
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    display: block;
+    display: table;
     position: fixed;
     height: 35px;
     width: 100%;
     bottom: 0;
     left: 0;
     z-index: 800;
+}
+
+#footer-left {
+    float: left;
+    display: table-cell;
+    padding-top: 3px;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer-right {
+    float: right;
+    display: table-cell;
+    padding-top: 3px;
 }
