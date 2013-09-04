@@ -59,6 +59,7 @@
    left: 0;
    min-width: 100%;
    min-height: 100%;
+   -webkit-filter: blur(5px);
 }
 
 .home-background {
@@ -88,6 +89,14 @@
     margin: 0 auto 0;
     min-width: 960px;
     max-width: 960px;
+}
+
+.content-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 20px 10px 20px 10px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
 }
 
 #content {
